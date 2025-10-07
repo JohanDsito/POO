@@ -26,7 +26,7 @@ public class Album {
     @Column(name = "numero_canciones")
     private Integer numeroCanciones;
 
-    @Column(name = "duracion_total") // en minutos
+    @Column(name = "duracion_total") 
     private Integer duracionTotal;
 
     @Column(precision = 10, scale = 2)

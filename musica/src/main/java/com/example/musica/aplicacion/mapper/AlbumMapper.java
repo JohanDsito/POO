@@ -4,7 +4,7 @@ import com.example.musica.infraestructura.model.Album;
 import com.example.musica.aplicacion.dto.AlbumDTO;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
-import org.mapstruct.ReportingPolicy; // <-- ✅ IMPORTANTE
+import org.mapstruct.ReportingPolicy;
 import org.mapstruct.factory.Mappers;
 
 @Mapper(componentModel = "spring", unmappedTargetPolicy = ReportingPolicy.IGNORE)

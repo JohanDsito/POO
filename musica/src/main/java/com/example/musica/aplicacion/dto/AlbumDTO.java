@@ -13,7 +13,6 @@ public class AlbumDTO {
     public AlbumDTO() {
     }
 
-    // Getters y setters
     public Long getId() {
         return id;
     }

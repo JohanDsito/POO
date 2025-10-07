@@ -23,7 +23,6 @@ public class CancionDTO {
     public CancionDTO() {
     }
 
-    // Getters y setters
     public Long getId() {
         return id;
     }

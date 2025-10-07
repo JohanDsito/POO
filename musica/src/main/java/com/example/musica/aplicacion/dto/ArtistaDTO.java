@@ -19,7 +19,6 @@ public class ArtistaDTO {
     public ArtistaDTO() {
     }
 
-    // Getters y setters
     public Long getId() {
         return id;
     }

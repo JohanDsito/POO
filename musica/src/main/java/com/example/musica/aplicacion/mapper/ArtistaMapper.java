@@ -3,7 +3,7 @@ package com.example.musica.aplicacion.mapper;
 import com.example.musica.infraestructura.model.Artista;
 import com.example.musica.aplicacion.dto.ArtistaDTO;
 import org.mapstruct.Mapper;
-import org.mapstruct.ReportingPolicy; // <-- ✅ IMPORTANTE
+import org.mapstruct.ReportingPolicy; 
 import org.mapstruct.factory.Mappers;
 
 @Mapper(componentModel = "spring", unmappedTargetPolicy = ReportingPolicy.IGNORE)

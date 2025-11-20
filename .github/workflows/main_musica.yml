@@ -32,6 +32,9 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     needs: build
+    permissions:
+      id-token: write     
+      contents: read
 
     steps:
       - name: Download artifact from build job
@@ -52,4 +55,5 @@ jobs:
           app-name: 'Musica'
           slot-name: 'Production'
           package: '*.jar'
+
 

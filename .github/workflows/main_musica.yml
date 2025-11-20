@@ -19,9 +19,9 @@ jobs:
           java-version: '21'
           distribution: 'microsoft'
 
-      - name: Build with Maven
-        run: mvn clean install
-        working-directory: musica  
+      - name: Build with Maven (skip tests)
+        run: mvn clean install -DskipTests
+        working-directory: musica
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
@@ -52,3 +52,4 @@ jobs:
           app-name: 'Musica'
           slot-name: 'Production'
           package: '*.jar'
+

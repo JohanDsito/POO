@@ -1,19 +1,31 @@
 package com.example.musica.aplicacion.dto;
 
-import java.time.LocalDateTime;
+import com.fasterxml.jackson.annotation.JsonFormat;
+import java.time.LocalDate;
 
 public class AlbumDTO {
 
     private Long id;
     private String titulo;
-    private LocalDateTime fechaLanzamiento;
+
+    @JsonFormat(pattern = "yyyy-MM-dd")
+    private LocalDate fechaLanzamiento;
+
     private String genero;
     private Long artistaId;
 
     public AlbumDTO() {
     }
 
-    // Getters y setters
+    public AlbumDTO(Long id, String titulo, LocalDate fechaLanzamiento, String genero, Long artistaId) {
+        this.id = id;
+        this.titulo = titulo;
+        this.fechaLanzamiento = fechaLanzamiento;
+        this.genero = genero;
+        this.artistaId = artistaId;
+    }
+
+    // Getters y Setters
     public Long getId() {
         return id;
     }
@@ -30,11 +42,11 @@ public class AlbumDTO {
         this.titulo = titulo;
     }
 
-    public LocalDateTime getFechaLanzamiento() {
+    public LocalDate getFechaLanzamiento() {
         return fechaLanzamiento;
     }
 
-    public void setFechaLanzamiento(LocalDateTime fechaLanzamiento) {
+    public void setFechaLanzamiento(LocalDate fechaLanzamiento) {
         this.fechaLanzamiento = fechaLanzamiento;
     }
 
